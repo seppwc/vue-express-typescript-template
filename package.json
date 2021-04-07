@@ -1,12 +1,12 @@
 {
-  "name": "fff-board",
+  "name": "vue-express-typescript-template",
   "version": "0.0.1",
-  "description": "full stack whiteboard app",
+  "description": "vue-express-typescript-template",
   "scripts": {
     "dev": "npm run --prefix client dev & npm run --prefix server dev",
     "client:dev": "npm run --prefix client dev",
     "server:dev": "npm run --prefix server dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm --prefix client install && npm --prefix server insstall"
   },
   "workspaces": [
     "client",
