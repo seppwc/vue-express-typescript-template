@@ -1,0 +1,15 @@
+{
+  "name": "fff-board",
+  "version": "0.0.1",
+  "description": "full stack whiteboard app",
+  "scripts": {
+    "dev": "npm run --prefix client dev & npm run --prefix server dev",
+    "client:dev": "npm run --prefix client dev",
+    "server:dev": "npm run --prefix server dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
