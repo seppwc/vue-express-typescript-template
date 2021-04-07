@@ -1,15 +1,15 @@
 import { Route, useRouter } from "../utils/useRouter";
-import { goodbyeRouter } from "./goodbye/goodbye.route";
-import { helloRouter } from "./hello/hello.route";
+import { userRouter } from "./user/user.route";
+import { taskRouter } from "./task/task.route";
 
 const routes: Route[] = [
   {
-    path: "/",
-    router: helloRouter,
+    path: "/task",
+    router: taskRouter,
   },
   {
-    path: "/goodbye",
-    router: goodbyeRouter,
+    path: "/user",
+    router: userRouter,
   },
 ];
 

@@ -28,6 +28,16 @@ export function onError(port: number, error: any) {
 
 export function onListening(server: http.Server) {
   const addr = server.address();
-  var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr?.port;
-  console.log("Listening on " + bind);
+  var bind =
+    typeof addr === "string"
+      ? "ws://localhost:" + addr
+      : "http://localhost:" + addr?.port;
+  console.log(
+    "\x1b[36m",
+    "> Server --",
+    "\x1b[0m",
+    "listening",
+    "\x1b[32m",
+    "-- " + bind
+  );
 }

@@ -1,9 +1,10 @@
 import { Request, Response, Router } from "express";
-
+import { db } from "../../app/db";
 const r = Router();
 
 r.get("/", (_: Request, res: Response) => {
-  res.send("hello");
+  const tasks = db.tasks;
+  res.json(tasks);
 });
 
-export const helloRouter = r;
+export const taskRouter = r;
