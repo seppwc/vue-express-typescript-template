@@ -6,7 +6,7 @@
     "dev": "npm run --prefix client dev & npm run --prefix server dev",
     "client:dev": "npm run --prefix client dev",
     "server:dev": "npm run --prefix server dev",
-    "postinstall": "npm --prefix client install && npm --prefix server insstall"
+    "postinstall": "npm --prefix client install & npm --prefix server insstall"
   },
   "workspaces": [
     "client",
